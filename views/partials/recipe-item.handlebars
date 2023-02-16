@@ -1,0 +1,38 @@
+
+{{!-- center edit and delete buttons --}}
+<div class="row edit-delete-btns">
+    {{!-- add buttons --}}
+     <ul>
+        {{!-- delete recipe button --}}
+        <li class="pill gold">
+            <a id="delete"class="nav-link">Delete</a> 
+        </li>
+    </ul>
+</div>
+
+<div class="break">
+<div class="row recipe-overview font-change">
+    <div class="row card-recipe card-hover">
+        <div class="card-body">
+            <h5 class="card-title mb-5">{{recipeName}}</h5>
+
+            {{!-- <img
+                src= 'https://ipfs.io/ipfs/{{images}}'
+                alt="Recipe Image"
+                class="mx-auto"
+            /> --}}
+
+            {{#each content}}
+                <p class="card-text font-increase" ><b>{{title}}</b></p>
+                 <div id="{{id}}-div" >
+                    <p id="{{id}}" class="font-decrease">{{data}}</p>
+                </div>
+        
+            {{/each}}
+        </div>
+        
+    </div>
+   
+
+</div>
+</div>

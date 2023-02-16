@@ -1,0 +1,339 @@
+ :root {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --tertiary: #5e877f;
+  --quatrinary: #6c6b67;
+  --light: #e3e4e3;
+  --dark: #182c23;
+  --error: rgb(228, 46, 1);
+  --border-radius: 0.3rem;
+  background-color: #000;
+}
+
+* {
+  font-family: 'Mochiy Pop One';
+}
+
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: whitesmoke;
+}
+
+header {
+  padding: 10px;
+  text-align: center;
+  background: var(--primary);
+  color: var(--light);
+}
+
+h1 {
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+aside {
+  flex: 0;
+  background-color: var(--tertiary);
+  padding: 80px;
+  text-align: left;
+  color: var(--light);
+}
+
+nav {
+  display: flex;
+  background-color: var(--primary);
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  text-align: center;
+  list-style-position: inside;
+}
+
+.recipe-overview {
+  width: 100%;
+  justify-content: center;
+}
+
+.edit-delete-btns{
+  margin-top: 2%;
+  justify-items: cen;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.gallery {
+  flex: 4;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+  transition: color 0.1s;
+  margin-left: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#logo {
+  margin-left: -15px;
+}
+
+.painting {
+  width: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.painting-details {
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.card {
+  margin: 20px;
+  width: 100%;
+  flex: 0 1 300px;
+  border: 7px double var(--dark);
+  border-radius: 10px;
+  background-color: var(--light);
+  color: var(--dark);
+}
+.card-title{
+  font-size: 2.0rem;
+}
+
+body div .font-change{
+  font-family: "Courier New";
+}
+.font-increase{
+
+    font-size: 2.0rem;
+}
+.font-decrease{
+  font-size: 1.0rem;
+}
+.card-hover:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-recipe{
+  margin: 20px;
+  /* width: 80%; */
+  flex: 0 1 60%;
+  border: 7px double var(--dark);
+  border-radius: 10px;
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.recipe-image-solo {
+  /* width:10%; */
+  /* height: 10%; */
+}
+
+.login-card {
+  margin: 0 0 20px 0;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 100px 100px;
+  border: 0px solid var(--dark);
+  border-radius: 10%;
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card header {
+  color: var(--light);
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  background-color: var(--tertiary);
+  padding: 0.625rem;
+  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+}
+
+.card-body {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.recipe-font{
+  font-size: 1.0rem;
+  text-align: none;
+  padding: 0;
+}
+.no-padding{
+  padding:0;
+}
+
+.gallery-name {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 5px var(--secondary);
+  border: 10px groove var(--light);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  align-items: center;
+}
+
+.galleries {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.nav-item {
+  color: black;
+  font-weight: 400;
+}
+
+.navbar-brand {
+  color: white;
+  margin-left: -14px;
+  font-weight: 100;
+}
+
+.pill {
+  border: none;
+  padding: 0px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 2px;
+  cursor: pointer;
+  border-radius: 35px;
+}
+
+.gold {
+  background-color: #ffc107;
+}
+
+.grey {
+  background-color: gray;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.page-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+input::placeholder {
+  font-size: 12px;
+}
+
+a.nav-link:hover {
+  color: rgba(255, 247, 0, 0.849);
+}
+
+@media (min-width: 200px) {
+   .navbar-expand-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+
+}
+
+@media (max-width: 600px) {
+ .login-card {
+   margin: 0 0 20px 0;
+   flex: 0 0 50%;
+   max-width: 80%;
+   padding: 50px 0px;
+   border: 0px solid var(--dark);
+   border-radius: 4%;
+   background-color: #ffffff;
+   color: black;
+   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 30%), 0 6px 20px 0 rgb(0 0 0 / 30%);
+  }
+}
+
+@media (max-width: 1200px) {
+
+ }
+
+
+.navbar-nav {
+  flex-direction: row;
+}
+.background {
+  background-image: url(/BG-repeat.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  background-color: transparent;
+  height: 100%;
+}
