@@ -50,6 +50,7 @@ var config = {
 // config.matchWebGLToCanvasSize = false;
 
 if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+    console.log("IPHONE")
     container.className = "unity-mobile";
     // Avoid draining fillrate performance on mobile devices,
     // and default/override low DPI mode on mobile browsers.
@@ -67,12 +68,18 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
     createUnityInstance(canvas, config, (progress) => {
         progressBarFull.style.width = 100 * progress + "%";
     }).then((unityInstance) => {
+        console.log("loading!!!")
         loadingBar.style.display = "none";
         fullscreenButton.onclick = () => {
+
+        console.log("loaded!!!")
         unityInstance.SetFullscreen(1);
         };
     }).catch((message) => {
+        console.log("errorr broooo")
         alert(message);
     });
 };
+
+console.log(canvas)
 document.body.appendChild(script);

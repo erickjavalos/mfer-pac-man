@@ -4,7 +4,7 @@
   "description": "A Dbag mfer pac man game.",
   "main": "index.js",
   "scripts": {
-    "start" : "node server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/erickjavalos/mfer-pac-man#readme",
   "dependencies": {
-    "nodeman": "^1.1.2",
     "@octokit/core": "^4.2.0",
     "axios": "^1.3.2",
     "base-64": "^1.0.0",
@@ -32,7 +31,9 @@
     "github": "^14.0.0",
     "handlebars": "^4.7.6",
     "mysql2": "^2.2.5",
+    "nodeman": "^1.1.2",
     "octokit": "^2.0.14",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "xhr2": "^0.2.1"
   }
 }
